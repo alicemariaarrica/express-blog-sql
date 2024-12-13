@@ -33,9 +33,9 @@ app.use(express.json());
 
 const postsRouter = require('./routers/posts');
 const postsControllers = require('./controllers/postsControllers.js')
+console.log('ciaone')
 
-
-app.use('/posts', postsRouter); 
+app.use('/posts', postsRouter);
 
 app.listen(3000, () => {
   console.log("Server started on port 3000");
